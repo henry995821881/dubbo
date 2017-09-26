@@ -1,0 +1,1693 @@
+/**
+ * 智恒达钢盟网络科技有限公司
+ */
+package com.xyscm.ldp.api.dto;
+
+import java.io.Serializable;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+/**
+ * 功能描述：仓储加工任务明细DTO
+ * 
+ * @author xielf
+ * @CreateDate 2017-7-19 下午3:04:17
+ * @Version: 1.0
+ */
+public class StorageMtaskDetailsDto implements Serializable{
+
+	private static final long serialVersionUID = -5187652442446705067L;
+	
+	private Long mtaskDetailsId;
+
+	private String mtaskBillcode;
+
+	private String mtaskBillbatch;
+
+
+	private String memberCode;
+
+	private Long mtaskDetailsClass;
+
+	private String mtaskDetailsProcess;
+
+	private String mtaskDetailsMtime;
+
+	private Long mtaskDetailsMstae;
+
+	private String equsettingCode;
+
+	private Long mtaskDetailsState;
+
+	private Long dataGoodsflag;
+
+	private String mtaskDetailsRemark;
+
+	private String orgCode;
+
+	private String deptCode;
+
+	private Long dataVernum;
+
+	private String warehouseCode;
+
+	private String goodstreeCode;
+
+	private String pntreeName;
+
+	private String productareaName;
+
+	private String partsnameName;
+
+	private String goodsMaterial;
+
+	private String goodsSpec;
+
+	private Double goodsSpec1;
+
+	private Double goodsSpec2;
+
+	private Double goodsSpec3;
+
+	private Double goodsSpec4;
+
+	private String goodsProperty1;
+
+	private String goodsProperty2;
+
+	private String goodsProperty3;
+
+	private String goodsProperty4;
+
+	private String goodsProperty5;
+
+	private Double goodsNumproperty1;
+
+	private Double goodsNumproperty2;
+
+	private String goodsContract;
+
+	private String goodsContractbatch;
+
+	private String goodsContractstr1;
+
+	private String goodsContractstr2;
+
+	private String goodsContractstr3;
+
+	private String goodsContractstr4;
+
+	private String goodsContractstr5;
+
+	private String goodsEntrybatch;
+
+	private String goodsEntrybatchold;
+
+	private String goodsEntrystr1;
+
+	private String goodsEntrystr2;
+
+	private String goodsEntrystr3;
+
+	private String goodsEntrystr4;
+
+	private String goodsEntrystr5;
+
+	private String goodsCodebill;
+	
+	private String goodsWmscodebill;
+
+	private String goodsCodebillold;
+
+	private String goodsCodestr1;
+
+	private String goodsCodestr2;
+
+	private String goodsCodestr3;
+
+	private String goodsCodestr4;
+
+	private String goodsCodestr5;
+
+	private String goodsCodestr6;
+
+	private String goodsCodestr7;
+
+	private String goodsCodestr8;
+
+	private String goodsCodestr9;
+
+	private String goodsCodestr10;
+
+	private Double goodsCodenum1;
+
+	private Double goodsCodenum2;
+
+	private Double goodsCodenum3;
+
+	private Long partsnameSplit;
+
+	private String goodsProperty;
+
+	private Double goodsPartsbranch;
+
+	private Double goodsWetpercentage;
+
+	private String goodsOrg;
+
+	private String goodsDept;
+
+	private String goodsCurrency;
+
+	private Double goodsExrate;
+
+	private String companyCode;
+
+	private String companyName;
+
+	private String partsnameNumunit;
+
+	private String partsnameWeightunit;
+
+	private String goodsMetering;
+
+	private Long goodsPriceun;
+
+	private Long goodsPiecemode;
+
+	private Long goodsWeightmode;
+
+	private String goodsCustomscode;
+
+	private String goodsEnname;
+
+	private String goodsEndescribe;
+
+	private String goodsBatch;
+
+	private String goodsIndustry;
+
+	private Double goodsNum;
+
+	private Double goodsPiecenum;
+
+	private Double goodsSingernum;
+
+	private Double goodsWeight;
+
+	private Double goodsAssistweight;
+
+	private Double mtaskDetailsOknum;
+
+	private Double mtaskDetailsOkweight;
+
+	private Double mtaskDetailsOkassistweight;
+
+	private Double mtaskDetailsNum;
+
+	private Double mtaskDetailsWeight;
+
+	private Double mtaskDetailsAssistweight;
+
+	private Long mtaskDetailsProcessno;
+
+	private String mtaskDetailsPerbatchall;
+
+	private String mtaskDetailsPerbatch;
+
+	private String mtaskDetailsBinderbatch;
+	
+	private String scmMtaskBillcode;
+	private String scmMtaskBillbatch;
+	private String scmMtaskBilltypecode;
+	
+	private Long datasMto;
+	
+	////////////////////////////////////////////////////
+	// 非数据库字段属性定义
+	////////////////////////////////////////////////////
+	/** 数据状态(区分增\删\改) */
+	private int dataFlag = Integer.valueOf(1);
+
+	/**
+	 * @return the mtaskDetailsId
+	 */
+	public Long getMtaskDetailsId() {
+		return mtaskDetailsId;
+	}
+
+	/**
+	 * @param mtaskDetailsId the mtaskDetailsId to set
+	 */
+	public void setMtaskDetailsId(Long mtaskDetailsId) {
+		this.mtaskDetailsId = mtaskDetailsId;
+	}
+
+	/**
+	 * @return the mtaskBillcode
+	 */
+	public String getMtaskBillcode() {
+		return mtaskBillcode;
+	}
+
+	/**
+	 * @param mtaskBillcode the mtaskBillcode to set
+	 */
+	public void setMtaskBillcode(String mtaskBillcode) {
+		this.mtaskBillcode = mtaskBillcode;
+	}
+
+	/**
+	 * @return the mtaskBillbatch
+	 */
+	public String getMtaskBillbatch() {
+		return mtaskBillbatch;
+	}
+
+	/**
+	 * @param mtaskBillbatch the mtaskBillbatch to set
+	 */
+	public void setMtaskBillbatch(String mtaskBillbatch) {
+		this.mtaskBillbatch = mtaskBillbatch;
+	}
+
+	/**
+	 * @return the memberCode
+	 */
+	public String getMemberCode() {
+		return memberCode;
+	}
+
+	/**
+	 * @param memberCode the memberCode to set
+	 */
+	public void setMemberCode(String memberCode) {
+		this.memberCode = memberCode;
+	}
+
+	/**
+	 * @return the mtaskDetailsClass
+	 */
+	public Long getMtaskDetailsClass() {
+		return mtaskDetailsClass;
+	}
+
+	/**
+	 * @param mtaskDetailsClass the mtaskDetailsClass to set
+	 */
+	public void setMtaskDetailsClass(Long mtaskDetailsClass) {
+		this.mtaskDetailsClass = mtaskDetailsClass;
+	}
+
+	/**
+	 * @return the mtaskDetailsProcess
+	 */
+	public String getMtaskDetailsProcess() {
+		return mtaskDetailsProcess;
+	}
+
+	/**
+	 * @param mtaskDetailsProcess the mtaskDetailsProcess to set
+	 */
+	public void setMtaskDetailsProcess(String mtaskDetailsProcess) {
+		this.mtaskDetailsProcess = mtaskDetailsProcess;
+	}
+
+	/**
+	 * @return the mtaskDetailsMtime
+	 */
+	public String getMtaskDetailsMtime() {
+		return mtaskDetailsMtime;
+	}
+
+	/**
+	 * @param mtaskDetailsMtime the mtaskDetailsMtime to set
+	 */
+	public void setMtaskDetailsMtime(String mtaskDetailsMtime) {
+		this.mtaskDetailsMtime = mtaskDetailsMtime;
+	}
+
+	/**
+	 * @return the mtaskDetailsMstae
+	 */
+	public Long getMtaskDetailsMstae() {
+		return mtaskDetailsMstae;
+	}
+
+	/**
+	 * @param mtaskDetailsMstae the mtaskDetailsMstae to set
+	 */
+	public void setMtaskDetailsMstae(Long mtaskDetailsMstae) {
+		this.mtaskDetailsMstae = mtaskDetailsMstae;
+	}
+
+	/**
+	 * @return the equsettingCode
+	 */
+	public String getEqusettingCode() {
+		return equsettingCode;
+	}
+
+	/**
+	 * @param equsettingCode the equsettingCode to set
+	 */
+	public void setEqusettingCode(String equsettingCode) {
+		this.equsettingCode = equsettingCode;
+	}
+
+	/**
+	 * @return the mtaskDetailsState
+	 */
+	public Long getMtaskDetailsState() {
+		return mtaskDetailsState;
+	}
+
+	/**
+	 * @param mtaskDetailsState the mtaskDetailsState to set
+	 */
+	public void setMtaskDetailsState(Long mtaskDetailsState) {
+		this.mtaskDetailsState = mtaskDetailsState;
+	}
+
+	/**
+	 * @return the dataGoodsflag
+	 */
+	public Long getDataGoodsflag() {
+		return dataGoodsflag;
+	}
+
+	/**
+	 * @param dataGoodsflag the dataGoodsflag to set
+	 */
+	public void setDataGoodsflag(Long dataGoodsflag) {
+		this.dataGoodsflag = dataGoodsflag;
+	}
+
+	/**
+	 * @return the mtaskDetailsRemark
+	 */
+	public String getMtaskDetailsRemark() {
+		return mtaskDetailsRemark;
+	}
+
+	/**
+	 * @param mtaskDetailsRemark the mtaskDetailsRemark to set
+	 */
+	public void setMtaskDetailsRemark(String mtaskDetailsRemark) {
+		this.mtaskDetailsRemark = mtaskDetailsRemark;
+	}
+
+	/**
+	 * @return the orgCode
+	 */
+	public String getOrgCode() {
+		return orgCode;
+	}
+
+	/**
+	 * @param orgCode the orgCode to set
+	 */
+	public void setOrgCode(String orgCode) {
+		this.orgCode = orgCode;
+	}
+
+	/**
+	 * @return the deptCode
+	 */
+	public String getDeptCode() {
+		return deptCode;
+	}
+
+	/**
+	 * @param deptCode the deptCode to set
+	 */
+	public void setDeptCode(String deptCode) {
+		this.deptCode = deptCode;
+	}
+
+	/**
+	 * @return the dataVernum
+	 */
+	public Long getDataVernum() {
+		return dataVernum;
+	}
+
+	/**
+	 * @param dataVernum the dataVernum to set
+	 */
+	public void setDataVernum(Long dataVernum) {
+		this.dataVernum = dataVernum;
+	}
+
+	/**
+	 * @return the warehouseCode
+	 */
+	public String getWarehouseCode() {
+		return warehouseCode;
+	}
+
+	/**
+	 * @param warehouseCode the warehouseCode to set
+	 */
+	public void setWarehouseCode(String warehouseCode) {
+		this.warehouseCode = warehouseCode;
+	}
+
+	/**
+	 * @return the goodstreeCode
+	 */
+	public String getGoodstreeCode() {
+		return goodstreeCode;
+	}
+
+	/**
+	 * @param goodstreeCode the goodstreeCode to set
+	 */
+	public void setGoodstreeCode(String goodstreeCode) {
+		this.goodstreeCode = goodstreeCode;
+	}
+
+	/**
+	 * @return the pntreeName
+	 */
+	public String getPntreeName() {
+		return pntreeName;
+	}
+
+	/**
+	 * @param pntreeName the pntreeName to set
+	 */
+	public void setPntreeName(String pntreeName) {
+		this.pntreeName = pntreeName;
+	}
+
+	/**
+	 * @return the productareaName
+	 */
+	public String getProductareaName() {
+		return productareaName;
+	}
+
+	/**
+	 * @param productareaName the productareaName to set
+	 */
+	public void setProductareaName(String productareaName) {
+		this.productareaName = productareaName;
+	}
+
+	/**
+	 * @return the partsnameName
+	 */
+	public String getPartsnameName() {
+		return partsnameName;
+	}
+
+	/**
+	 * @param partsnameName the partsnameName to set
+	 */
+	public void setPartsnameName(String partsnameName) {
+		this.partsnameName = partsnameName;
+	}
+
+	/**
+	 * @return the goodsMaterial
+	 */
+	public String getGoodsMaterial() {
+		return goodsMaterial;
+	}
+
+	/**
+	 * @param goodsMaterial the goodsMaterial to set
+	 */
+	public void setGoodsMaterial(String goodsMaterial) {
+		this.goodsMaterial = goodsMaterial;
+	}
+
+	/**
+	 * @return the goodsSpec
+	 */
+	public String getGoodsSpec() {
+		return goodsSpec;
+	}
+
+	/**
+	 * @param goodsSpec the goodsSpec to set
+	 */
+	public void setGoodsSpec(String goodsSpec) {
+		this.goodsSpec = goodsSpec;
+	}
+
+	/**
+	 * @return the goodsSpec1
+	 */
+	public Double getGoodsSpec1() {
+		return goodsSpec1;
+	}
+
+	/**
+	 * @param goodsSpec1 the goodsSpec1 to set
+	 */
+	public void setGoodsSpec1(Double goodsSpec1) {
+		this.goodsSpec1 = goodsSpec1;
+	}
+
+	/**
+	 * @return the goodsSpec2
+	 */
+	public Double getGoodsSpec2() {
+		return goodsSpec2;
+	}
+
+	/**
+	 * @param goodsSpec2 the goodsSpec2 to set
+	 */
+	public void setGoodsSpec2(Double goodsSpec2) {
+		this.goodsSpec2 = goodsSpec2;
+	}
+
+	/**
+	 * @return the goodsSpec3
+	 */
+	public Double getGoodsSpec3() {
+		return goodsSpec3;
+	}
+
+	/**
+	 * @param goodsSpec3 the goodsSpec3 to set
+	 */
+	public void setGoodsSpec3(Double goodsSpec3) {
+		this.goodsSpec3 = goodsSpec3;
+	}
+
+	/**
+	 * @return the goodsSpec4
+	 */
+	public Double getGoodsSpec4() {
+		return goodsSpec4;
+	}
+
+	/**
+	 * @param goodsSpec4 the goodsSpec4 to set
+	 */
+	public void setGoodsSpec4(Double goodsSpec4) {
+		this.goodsSpec4 = goodsSpec4;
+	}
+
+	/**
+	 * @return the goodsProperty1
+	 */
+	public String getGoodsProperty1() {
+		return goodsProperty1;
+	}
+
+	/**
+	 * @param goodsProperty1 the goodsProperty1 to set
+	 */
+	public void setGoodsProperty1(String goodsProperty1) {
+		this.goodsProperty1 = goodsProperty1;
+	}
+
+	/**
+	 * @return the goodsProperty2
+	 */
+	public String getGoodsProperty2() {
+		return goodsProperty2;
+	}
+
+	/**
+	 * @param goodsProperty2 the goodsProperty2 to set
+	 */
+	public void setGoodsProperty2(String goodsProperty2) {
+		this.goodsProperty2 = goodsProperty2;
+	}
+
+	/**
+	 * @return the goodsProperty3
+	 */
+	public String getGoodsProperty3() {
+		return goodsProperty3;
+	}
+
+	/**
+	 * @param goodsProperty3 the goodsProperty3 to set
+	 */
+	public void setGoodsProperty3(String goodsProperty3) {
+		this.goodsProperty3 = goodsProperty3;
+	}
+
+	/**
+	 * @return the goodsProperty4
+	 */
+	public String getGoodsProperty4() {
+		return goodsProperty4;
+	}
+
+	/**
+	 * @param goodsProperty4 the goodsProperty4 to set
+	 */
+	public void setGoodsProperty4(String goodsProperty4) {
+		this.goodsProperty4 = goodsProperty4;
+	}
+
+	/**
+	 * @return the goodsProperty5
+	 */
+	public String getGoodsProperty5() {
+		return goodsProperty5;
+	}
+
+	/**
+	 * @param goodsProperty5 the goodsProperty5 to set
+	 */
+	public void setGoodsProperty5(String goodsProperty5) {
+		this.goodsProperty5 = goodsProperty5;
+	}
+
+	/**
+	 * @return the goodsNumproperty1
+	 */
+	public Double getGoodsNumproperty1() {
+		return goodsNumproperty1;
+	}
+
+	/**
+	 * @param goodsNumproperty1 the goodsNumproperty1 to set
+	 */
+	public void setGoodsNumproperty1(Double goodsNumproperty1) {
+		this.goodsNumproperty1 = goodsNumproperty1;
+	}
+
+	/**
+	 * @return the goodsNumproperty2
+	 */
+	public Double getGoodsNumproperty2() {
+		return goodsNumproperty2;
+	}
+
+	/**
+	 * @param goodsNumproperty2 the goodsNumproperty2 to set
+	 */
+	public void setGoodsNumproperty2(Double goodsNumproperty2) {
+		this.goodsNumproperty2 = goodsNumproperty2;
+	}
+
+	/**
+	 * @return the goodsContract
+	 */
+	public String getGoodsContract() {
+		return goodsContract;
+	}
+
+	/**
+	 * @param goodsContract the goodsContract to set
+	 */
+	public void setGoodsContract(String goodsContract) {
+		this.goodsContract = goodsContract;
+	}
+
+	/**
+	 * @return the goodsContractbatch
+	 */
+	public String getGoodsContractbatch() {
+		return goodsContractbatch;
+	}
+
+	/**
+	 * @param goodsContractbatch the goodsContractbatch to set
+	 */
+	public void setGoodsContractbatch(String goodsContractbatch) {
+		this.goodsContractbatch = goodsContractbatch;
+	}
+
+	/**
+	 * @return the goodsContractstr1
+	 */
+	public String getGoodsContractstr1() {
+		return goodsContractstr1;
+	}
+
+	/**
+	 * @param goodsContractstr1 the goodsContractstr1 to set
+	 */
+	public void setGoodsContractstr1(String goodsContractstr1) {
+		this.goodsContractstr1 = goodsContractstr1;
+	}
+
+	/**
+	 * @return the goodsContractstr2
+	 */
+	public String getGoodsContractstr2() {
+		return goodsContractstr2;
+	}
+
+	/**
+	 * @param goodsContractstr2 the goodsContractstr2 to set
+	 */
+	public void setGoodsContractstr2(String goodsContractstr2) {
+		this.goodsContractstr2 = goodsContractstr2;
+	}
+
+	/**
+	 * @return the goodsContractstr3
+	 */
+	public String getGoodsContractstr3() {
+		return goodsContractstr3;
+	}
+
+	/**
+	 * @param goodsContractstr3 the goodsContractstr3 to set
+	 */
+	public void setGoodsContractstr3(String goodsContractstr3) {
+		this.goodsContractstr3 = goodsContractstr3;
+	}
+
+	/**
+	 * @return the goodsContractstr4
+	 */
+	public String getGoodsContractstr4() {
+		return goodsContractstr4;
+	}
+
+	/**
+	 * @param goodsContractstr4 the goodsContractstr4 to set
+	 */
+	public void setGoodsContractstr4(String goodsContractstr4) {
+		this.goodsContractstr4 = goodsContractstr4;
+	}
+
+	/**
+	 * @return the goodsContractstr5
+	 */
+	public String getGoodsContractstr5() {
+		return goodsContractstr5;
+	}
+
+	/**
+	 * @param goodsContractstr5 the goodsContractstr5 to set
+	 */
+	public void setGoodsContractstr5(String goodsContractstr5) {
+		this.goodsContractstr5 = goodsContractstr5;
+	}
+
+	/**
+	 * @return the goodsEntrybatch
+	 */
+	public String getGoodsEntrybatch() {
+		return goodsEntrybatch;
+	}
+
+	/**
+	 * @param goodsEntrybatch the goodsEntrybatch to set
+	 */
+	public void setGoodsEntrybatch(String goodsEntrybatch) {
+		this.goodsEntrybatch = goodsEntrybatch;
+	}
+
+	/**
+	 * @return the goodsEntrybatchold
+	 */
+	public String getGoodsEntrybatchold() {
+		return goodsEntrybatchold;
+	}
+
+	/**
+	 * @param goodsEntrybatchold the goodsEntrybatchold to set
+	 */
+	public void setGoodsEntrybatchold(String goodsEntrybatchold) {
+		this.goodsEntrybatchold = goodsEntrybatchold;
+	}
+
+	/**
+	 * @return the goodsEntrystr1
+	 */
+	public String getGoodsEntrystr1() {
+		return goodsEntrystr1;
+	}
+
+	/**
+	 * @param goodsEntrystr1 the goodsEntrystr1 to set
+	 */
+	public void setGoodsEntrystr1(String goodsEntrystr1) {
+		this.goodsEntrystr1 = goodsEntrystr1;
+	}
+
+	/**
+	 * @return the goodsEntrystr2
+	 */
+	public String getGoodsEntrystr2() {
+		return goodsEntrystr2;
+	}
+
+	/**
+	 * @param goodsEntrystr2 the goodsEntrystr2 to set
+	 */
+	public void setGoodsEntrystr2(String goodsEntrystr2) {
+		this.goodsEntrystr2 = goodsEntrystr2;
+	}
+
+	/**
+	 * @return the goodsEntrystr3
+	 */
+	public String getGoodsEntrystr3() {
+		return goodsEntrystr3;
+	}
+
+	/**
+	 * @param goodsEntrystr3 the goodsEntrystr3 to set
+	 */
+	public void setGoodsEntrystr3(String goodsEntrystr3) {
+		this.goodsEntrystr3 = goodsEntrystr3;
+	}
+
+	/**
+	 * @return the goodsEntrystr4
+	 */
+	public String getGoodsEntrystr4() {
+		return goodsEntrystr4;
+	}
+
+	/**
+	 * @param goodsEntrystr4 the goodsEntrystr4 to set
+	 */
+	public void setGoodsEntrystr4(String goodsEntrystr4) {
+		this.goodsEntrystr4 = goodsEntrystr4;
+	}
+
+	/**
+	 * @return the goodsEntrystr5
+	 */
+	public String getGoodsEntrystr5() {
+		return goodsEntrystr5;
+	}
+
+	/**
+	 * @param goodsEntrystr5 the goodsEntrystr5 to set
+	 */
+	public void setGoodsEntrystr5(String goodsEntrystr5) {
+		this.goodsEntrystr5 = goodsEntrystr5;
+	}
+
+	/**
+	 * @return the goodsCodebill
+	 */
+	public String getGoodsCodebill() {
+		return goodsCodebill;
+	}
+
+	/**
+	 * @param goodsCodebill the goodsCodebill to set
+	 */
+	public void setGoodsCodebill(String goodsCodebill) {
+		this.goodsCodebill = goodsCodebill;
+	}
+
+	/**
+	 * @return the goodsWmscodebill
+	 */
+	public String getGoodsWmscodebill() {
+		return goodsWmscodebill;
+	}
+
+	/**
+	 * @param goodsWmscodebill the goodsWmscodebill to set
+	 */
+	public void setGoodsWmscodebill(String goodsWmscodebill) {
+		this.goodsWmscodebill = goodsWmscodebill;
+	}
+
+	/**
+	 * @return the goodsCodebillold
+	 */
+	public String getGoodsCodebillold() {
+		return goodsCodebillold;
+	}
+
+	/**
+	 * @param goodsCodebillold the goodsCodebillold to set
+	 */
+	public void setGoodsCodebillold(String goodsCodebillold) {
+		this.goodsCodebillold = goodsCodebillold;
+	}
+
+	/**
+	 * @return the goodsCodestr1
+	 */
+	public String getGoodsCodestr1() {
+		return goodsCodestr1;
+	}
+
+	/**
+	 * @param goodsCodestr1 the goodsCodestr1 to set
+	 */
+	public void setGoodsCodestr1(String goodsCodestr1) {
+		this.goodsCodestr1 = goodsCodestr1;
+	}
+
+	/**
+	 * @return the goodsCodestr2
+	 */
+	public String getGoodsCodestr2() {
+		return goodsCodestr2;
+	}
+
+	/**
+	 * @param goodsCodestr2 the goodsCodestr2 to set
+	 */
+	public void setGoodsCodestr2(String goodsCodestr2) {
+		this.goodsCodestr2 = goodsCodestr2;
+	}
+
+	/**
+	 * @return the goodsCodestr3
+	 */
+	public String getGoodsCodestr3() {
+		return goodsCodestr3;
+	}
+
+	/**
+	 * @param goodsCodestr3 the goodsCodestr3 to set
+	 */
+	public void setGoodsCodestr3(String goodsCodestr3) {
+		this.goodsCodestr3 = goodsCodestr3;
+	}
+
+	/**
+	 * @return the goodsCodestr4
+	 */
+	public String getGoodsCodestr4() {
+		return goodsCodestr4;
+	}
+
+	/**
+	 * @param goodsCodestr4 the goodsCodestr4 to set
+	 */
+	public void setGoodsCodestr4(String goodsCodestr4) {
+		this.goodsCodestr4 = goodsCodestr4;
+	}
+
+	/**
+	 * @return the goodsCodestr5
+	 */
+	public String getGoodsCodestr5() {
+		return goodsCodestr5;
+	}
+
+	/**
+	 * @param goodsCodestr5 the goodsCodestr5 to set
+	 */
+	public void setGoodsCodestr5(String goodsCodestr5) {
+		this.goodsCodestr5 = goodsCodestr5;
+	}
+
+	/**
+	 * @return the goodsCodestr6
+	 */
+	public String getGoodsCodestr6() {
+		return goodsCodestr6;
+	}
+
+	/**
+	 * @param goodsCodestr6 the goodsCodestr6 to set
+	 */
+	public void setGoodsCodestr6(String goodsCodestr6) {
+		this.goodsCodestr6 = goodsCodestr6;
+	}
+
+	/**
+	 * @return the goodsCodestr7
+	 */
+	public String getGoodsCodestr7() {
+		return goodsCodestr7;
+	}
+
+	/**
+	 * @param goodsCodestr7 the goodsCodestr7 to set
+	 */
+	public void setGoodsCodestr7(String goodsCodestr7) {
+		this.goodsCodestr7 = goodsCodestr7;
+	}
+
+	/**
+	 * @return the goodsCodestr8
+	 */
+	public String getGoodsCodestr8() {
+		return goodsCodestr8;
+	}
+
+	/**
+	 * @param goodsCodestr8 the goodsCodestr8 to set
+	 */
+	public void setGoodsCodestr8(String goodsCodestr8) {
+		this.goodsCodestr8 = goodsCodestr8;
+	}
+
+	/**
+	 * @return the goodsCodestr9
+	 */
+	public String getGoodsCodestr9() {
+		return goodsCodestr9;
+	}
+
+	/**
+	 * @param goodsCodestr9 the goodsCodestr9 to set
+	 */
+	public void setGoodsCodestr9(String goodsCodestr9) {
+		this.goodsCodestr9 = goodsCodestr9;
+	}
+
+	/**
+	 * @return the goodsCodestr10
+	 */
+	public String getGoodsCodestr10() {
+		return goodsCodestr10;
+	}
+
+	/**
+	 * @param goodsCodestr10 the goodsCodestr10 to set
+	 */
+	public void setGoodsCodestr10(String goodsCodestr10) {
+		this.goodsCodestr10 = goodsCodestr10;
+	}
+
+	/**
+	 * @return the goodsCodenum1
+	 */
+	public Double getGoodsCodenum1() {
+		return goodsCodenum1;
+	}
+
+	/**
+	 * @param goodsCodenum1 the goodsCodenum1 to set
+	 */
+	public void setGoodsCodenum1(Double goodsCodenum1) {
+		this.goodsCodenum1 = goodsCodenum1;
+	}
+
+	/**
+	 * @return the goodsCodenum2
+	 */
+	public Double getGoodsCodenum2() {
+		return goodsCodenum2;
+	}
+
+	/**
+	 * @param goodsCodenum2 the goodsCodenum2 to set
+	 */
+	public void setGoodsCodenum2(Double goodsCodenum2) {
+		this.goodsCodenum2 = goodsCodenum2;
+	}
+
+	/**
+	 * @return the goodsCodenum3
+	 */
+	public Double getGoodsCodenum3() {
+		return goodsCodenum3;
+	}
+
+	/**
+	 * @param goodsCodenum3 the goodsCodenum3 to set
+	 */
+	public void setGoodsCodenum3(Double goodsCodenum3) {
+		this.goodsCodenum3 = goodsCodenum3;
+	}
+
+	/**
+	 * @return the partsnameSplit
+	 */
+	public Long getPartsnameSplit() {
+		return partsnameSplit;
+	}
+
+	/**
+	 * @param partsnameSplit the partsnameSplit to set
+	 */
+	public void setPartsnameSplit(Long partsnameSplit) {
+		this.partsnameSplit = partsnameSplit;
+	}
+
+	/**
+	 * @return the goodsProperty
+	 */
+	public String getGoodsProperty() {
+		return goodsProperty;
+	}
+
+	/**
+	 * @param goodsProperty the goodsProperty to set
+	 */
+	public void setGoodsProperty(String goodsProperty) {
+		this.goodsProperty = goodsProperty;
+	}
+
+	/**
+	 * @return the goodsPartsbranch
+	 */
+	public Double getGoodsPartsbranch() {
+		return goodsPartsbranch;
+	}
+
+	/**
+	 * @param goodsPartsbranch the goodsPartsbranch to set
+	 */
+	public void setGoodsPartsbranch(Double goodsPartsbranch) {
+		this.goodsPartsbranch = goodsPartsbranch;
+	}
+
+	/**
+	 * @return the goodsWetpercentage
+	 */
+	public Double getGoodsWetpercentage() {
+		return goodsWetpercentage;
+	}
+
+	/**
+	 * @param goodsWetpercentage the goodsWetpercentage to set
+	 */
+	public void setGoodsWetpercentage(Double goodsWetpercentage) {
+		this.goodsWetpercentage = goodsWetpercentage;
+	}
+
+	/**
+	 * @return the goodsOrg
+	 */
+	public String getGoodsOrg() {
+		return goodsOrg;
+	}
+
+	/**
+	 * @param goodsOrg the goodsOrg to set
+	 */
+	public void setGoodsOrg(String goodsOrg) {
+		this.goodsOrg = goodsOrg;
+	}
+
+	/**
+	 * @return the goodsDept
+	 */
+	public String getGoodsDept() {
+		return goodsDept;
+	}
+
+	/**
+	 * @param goodsDept the goodsDept to set
+	 */
+	public void setGoodsDept(String goodsDept) {
+		this.goodsDept = goodsDept;
+	}
+
+	/**
+	 * @return the goodsCurrency
+	 */
+	public String getGoodsCurrency() {
+		return goodsCurrency;
+	}
+
+	/**
+	 * @param goodsCurrency the goodsCurrency to set
+	 */
+	public void setGoodsCurrency(String goodsCurrency) {
+		this.goodsCurrency = goodsCurrency;
+	}
+
+	/**
+	 * @return the goodsExrate
+	 */
+	public Double getGoodsExrate() {
+		return goodsExrate;
+	}
+
+	/**
+	 * @param goodsExrate the goodsExrate to set
+	 */
+	public void setGoodsExrate(Double goodsExrate) {
+		this.goodsExrate = goodsExrate;
+	}
+
+	/**
+	 * @return the companyCode
+	 */
+	public String getCompanyCode() {
+		return companyCode;
+	}
+
+	/**
+	 * @param companyCode the companyCode to set
+	 */
+	public void setCompanyCode(String companyCode) {
+		this.companyCode = companyCode;
+	}
+
+	/**
+	 * @return the companyName
+	 */
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	/**
+	 * @param companyName the companyName to set
+	 */
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	/**
+	 * @return the partsnameNumunit
+	 */
+	public String getPartsnameNumunit() {
+		return partsnameNumunit;
+	}
+
+	/**
+	 * @param partsnameNumunit the partsnameNumunit to set
+	 */
+	public void setPartsnameNumunit(String partsnameNumunit) {
+		this.partsnameNumunit = partsnameNumunit;
+	}
+
+	/**
+	 * @return the partsnameWeightunit
+	 */
+	public String getPartsnameWeightunit() {
+		return partsnameWeightunit;
+	}
+
+	/**
+	 * @param partsnameWeightunit the partsnameWeightunit to set
+	 */
+	public void setPartsnameWeightunit(String partsnameWeightunit) {
+		this.partsnameWeightunit = partsnameWeightunit;
+	}
+
+	/**
+	 * @return the goodsMetering
+	 */
+	public String getGoodsMetering() {
+		return goodsMetering;
+	}
+
+	/**
+	 * @param goodsMetering the goodsMetering to set
+	 */
+	public void setGoodsMetering(String goodsMetering) {
+		this.goodsMetering = goodsMetering;
+	}
+
+	/**
+	 * @return the goodsPriceun
+	 */
+	public Long getGoodsPriceun() {
+		return goodsPriceun;
+	}
+
+	/**
+	 * @param goodsPriceun the goodsPriceun to set
+	 */
+	public void setGoodsPriceun(Long goodsPriceun) {
+		this.goodsPriceun = goodsPriceun;
+	}
+
+	/**
+	 * @return the goodsPiecemode
+	 */
+	public Long getGoodsPiecemode() {
+		return goodsPiecemode;
+	}
+
+	/**
+	 * @param goodsPiecemode the goodsPiecemode to set
+	 */
+	public void setGoodsPiecemode(Long goodsPiecemode) {
+		this.goodsPiecemode = goodsPiecemode;
+	}
+
+	/**
+	 * @return the goodsWeightmode
+	 */
+	public Long getGoodsWeightmode() {
+		return goodsWeightmode;
+	}
+
+	/**
+	 * @param goodsWeightmode the goodsWeightmode to set
+	 */
+	public void setGoodsWeightmode(Long goodsWeightmode) {
+		this.goodsWeightmode = goodsWeightmode;
+	}
+
+	/**
+	 * @return the goodsCustomscode
+	 */
+	public String getGoodsCustomscode() {
+		return goodsCustomscode;
+	}
+
+	/**
+	 * @param goodsCustomscode the goodsCustomscode to set
+	 */
+	public void setGoodsCustomscode(String goodsCustomscode) {
+		this.goodsCustomscode = goodsCustomscode;
+	}
+
+	/**
+	 * @return the goodsEnname
+	 */
+	public String getGoodsEnname() {
+		return goodsEnname;
+	}
+
+	/**
+	 * @param goodsEnname the goodsEnname to set
+	 */
+	public void setGoodsEnname(String goodsEnname) {
+		this.goodsEnname = goodsEnname;
+	}
+
+	/**
+	 * @return the goodsEndescribe
+	 */
+	public String getGoodsEndescribe() {
+		return goodsEndescribe;
+	}
+
+	/**
+	 * @param goodsEndescribe the goodsEndescribe to set
+	 */
+	public void setGoodsEndescribe(String goodsEndescribe) {
+		this.goodsEndescribe = goodsEndescribe;
+	}
+
+	/**
+	 * @return the goodsBatch
+	 */
+	public String getGoodsBatch() {
+		return goodsBatch;
+	}
+
+	/**
+	 * @param goodsBatch the goodsBatch to set
+	 */
+	public void setGoodsBatch(String goodsBatch) {
+		this.goodsBatch = goodsBatch;
+	}
+
+	/**
+	 * @return the goodsIndustry
+	 */
+	public String getGoodsIndustry() {
+		return goodsIndustry;
+	}
+
+	/**
+	 * @param goodsIndustry the goodsIndustry to set
+	 */
+	public void setGoodsIndustry(String goodsIndustry) {
+		this.goodsIndustry = goodsIndustry;
+	}
+
+	/**
+	 * @return the goodsNum
+	 */
+	public Double getGoodsNum() {
+		return goodsNum;
+	}
+
+	/**
+	 * @param goodsNum the goodsNum to set
+	 */
+	public void setGoodsNum(Double goodsNum) {
+		this.goodsNum = goodsNum;
+	}
+
+	/**
+	 * @return the goodsPiecenum
+	 */
+	public Double getGoodsPiecenum() {
+		return goodsPiecenum;
+	}
+
+	/**
+	 * @param goodsPiecenum the goodsPiecenum to set
+	 */
+	public void setGoodsPiecenum(Double goodsPiecenum) {
+		this.goodsPiecenum = goodsPiecenum;
+	}
+
+	/**
+	 * @return the goodsSingernum
+	 */
+	public Double getGoodsSingernum() {
+		return goodsSingernum;
+	}
+
+	/**
+	 * @param goodsSingernum the goodsSingernum to set
+	 */
+	public void setGoodsSingernum(Double goodsSingernum) {
+		this.goodsSingernum = goodsSingernum;
+	}
+
+	/**
+	 * @return the goodsWeight
+	 */
+	public Double getGoodsWeight() {
+		return goodsWeight;
+	}
+
+	/**
+	 * @param goodsWeight the goodsWeight to set
+	 */
+	public void setGoodsWeight(Double goodsWeight) {
+		this.goodsWeight = goodsWeight;
+	}
+
+	/**
+	 * @return the goodsAssistweight
+	 */
+	public Double getGoodsAssistweight() {
+		return goodsAssistweight;
+	}
+
+	/**
+	 * @param goodsAssistweight the goodsAssistweight to set
+	 */
+	public void setGoodsAssistweight(Double goodsAssistweight) {
+		this.goodsAssistweight = goodsAssistweight;
+	}
+
+	/**
+	 * @return the mtaskDetailsOknum
+	 */
+	public Double getMtaskDetailsOknum() {
+		return mtaskDetailsOknum;
+	}
+
+	/**
+	 * @param mtaskDetailsOknum the mtaskDetailsOknum to set
+	 */
+	public void setMtaskDetailsOknum(Double mtaskDetailsOknum) {
+		this.mtaskDetailsOknum = mtaskDetailsOknum;
+	}
+
+	/**
+	 * @return the mtaskDetailsOkweight
+	 */
+	public Double getMtaskDetailsOkweight() {
+		return mtaskDetailsOkweight;
+	}
+
+	/**
+	 * @param mtaskDetailsOkweight the mtaskDetailsOkweight to set
+	 */
+	public void setMtaskDetailsOkweight(Double mtaskDetailsOkweight) {
+		this.mtaskDetailsOkweight = mtaskDetailsOkweight;
+	}
+
+	/**
+	 * @return the mtaskDetailsOkassistweight
+	 */
+	public Double getMtaskDetailsOkassistweight() {
+		return mtaskDetailsOkassistweight;
+	}
+
+	/**
+	 * @param mtaskDetailsOkassistweight the mtaskDetailsOkassistweight to set
+	 */
+	public void setMtaskDetailsOkassistweight(Double mtaskDetailsOkassistweight) {
+		this.mtaskDetailsOkassistweight = mtaskDetailsOkassistweight;
+	}
+
+	/**
+	 * @return the mtaskDetailsNum
+	 */
+	public Double getMtaskDetailsNum() {
+		return mtaskDetailsNum;
+	}
+
+	/**
+	 * @param mtaskDetailsNum the mtaskDetailsNum to set
+	 */
+	public void setMtaskDetailsNum(Double mtaskDetailsNum) {
+		this.mtaskDetailsNum = mtaskDetailsNum;
+	}
+
+	/**
+	 * @return the mtaskDetailsWeight
+	 */
+	public Double getMtaskDetailsWeight() {
+		return mtaskDetailsWeight;
+	}
+
+	/**
+	 * @param mtaskDetailsWeight the mtaskDetailsWeight to set
+	 */
+	public void setMtaskDetailsWeight(Double mtaskDetailsWeight) {
+		this.mtaskDetailsWeight = mtaskDetailsWeight;
+	}
+
+	/**
+	 * @return the mtaskDetailsAssistweight
+	 */
+	public Double getMtaskDetailsAssistweight() {
+		return mtaskDetailsAssistweight;
+	}
+
+	/**
+	 * @param mtaskDetailsAssistweight the mtaskDetailsAssistweight to set
+	 */
+	public void setMtaskDetailsAssistweight(Double mtaskDetailsAssistweight) {
+		this.mtaskDetailsAssistweight = mtaskDetailsAssistweight;
+	}
+
+	/**
+	 * @return the mtaskDetailsProcessno
+	 */
+	public Long getMtaskDetailsProcessno() {
+		return mtaskDetailsProcessno;
+	}
+
+	/**
+	 * @param mtaskDetailsProcessno the mtaskDetailsProcessno to set
+	 */
+	public void setMtaskDetailsProcessno(Long mtaskDetailsProcessno) {
+		this.mtaskDetailsProcessno = mtaskDetailsProcessno;
+	}
+
+	/**
+	 * @return the mtaskDetailsPerbatchall
+	 */
+	public String getMtaskDetailsPerbatchall() {
+		return mtaskDetailsPerbatchall;
+	}
+
+	/**
+	 * @param mtaskDetailsPerbatchall the mtaskDetailsPerbatchall to set
+	 */
+	public void setMtaskDetailsPerbatchall(String mtaskDetailsPerbatchall) {
+		this.mtaskDetailsPerbatchall = mtaskDetailsPerbatchall;
+	}
+
+	/**
+	 * @return the mtaskDetailsPerbatch
+	 */
+	public String getMtaskDetailsPerbatch() {
+		return mtaskDetailsPerbatch;
+	}
+
+	/**
+	 * @param mtaskDetailsPerbatch the mtaskDetailsPerbatch to set
+	 */
+	public void setMtaskDetailsPerbatch(String mtaskDetailsPerbatch) {
+		this.mtaskDetailsPerbatch = mtaskDetailsPerbatch;
+	}
+
+	/**
+	 * @return the mtaskDetailsBinderbatch
+	 */
+	public String getMtaskDetailsBinderbatch() {
+		return mtaskDetailsBinderbatch;
+	}
+
+	/**
+	 * @param mtaskDetailsBinderbatch the mtaskDetailsBinderbatch to set
+	 */
+	public void setMtaskDetailsBinderbatch(String mtaskDetailsBinderbatch) {
+		this.mtaskDetailsBinderbatch = mtaskDetailsBinderbatch;
+	}
+
+	/**
+	 * @return the scmMtaskBillcode
+	 */
+	public String getScmMtaskBillcode() {
+		return scmMtaskBillcode;
+	}
+
+	/**
+	 * @param scmMtaskBillcode the scmMtaskBillcode to set
+	 */
+	public void setScmMtaskBillcode(String scmMtaskBillcode) {
+		this.scmMtaskBillcode = scmMtaskBillcode;
+	}
+
+	/**
+	 * @return the scmMtaskBillbatch
+	 */
+	public String getScmMtaskBillbatch() {
+		return scmMtaskBillbatch;
+	}
+
+	/**
+	 * @param scmMtaskBillbatch the scmMtaskBillbatch to set
+	 */
+	public void setScmMtaskBillbatch(String scmMtaskBillbatch) {
+		this.scmMtaskBillbatch = scmMtaskBillbatch;
+	}
+
+	/**
+	 * @return the scmMtaskBilltypecode
+	 */
+	public String getScmMtaskBilltypecode() {
+		return scmMtaskBilltypecode;
+	}
+
+	/**
+	 * @param scmMtaskBilltypecode the scmMtaskBilltypecode to set
+	 */
+	public void setScmMtaskBilltypecode(String scmMtaskBilltypecode) {
+		this.scmMtaskBilltypecode = scmMtaskBilltypecode;
+	}
+
+	/**
+	 * @return the datasMto
+	 */
+	public Long getDatasMto() {
+		return datasMto;
+	}
+
+	/**
+	 * @param datasMto the datasMto to set
+	 */
+	public void setDatasMto(Long datasMto) {
+		this.datasMto = datasMto;
+	}
+	
+	
+
+	/**
+	 * @return the dataFlag
+	 */
+	public int getDataFlag() {
+		return dataFlag;
+	}
+
+	/**
+	 * @param dataFlag the dataFlag to set
+	 */
+	public void setDataFlag(int dataFlag) {
+		this.dataFlag = dataFlag;
+	}
+
+	public String toString() {
+		return ReflectionToStringBuilder.toString(this);
+	}
+}

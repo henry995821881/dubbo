@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://code.alibabatech.com/schema/dubbo  
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:application name="ldp_provider" />
+	<dubbo:protocol name="dubbo" port="-1" accepts="200" /><!-- 端口自动分配 -->
+
+	<dubbo:registry protocol="zookeeper" address="${zookeeper.url}" id="ldpZookeeper" timeout="15000"/>
+	<!-- generator-insert-location -->
+
+	<dubbo:service interface="com.xyscm.ldp.api.LdpReceivingCheckInService"
+		ref="ldpReceivingCheckInfacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="2" />
+                     
+	<dubbo:service interface="com.xyscm.ldp.api.LdpEnterService"
+		ref="ldpEnterFacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="2" />
+
+	<!--ERP接收码单service-->
+	<dubbo:reference interface="com.xyscm.erp.ldp.api.ReceivingLdpCodeBill" id="receivingLdpCodeBill"
+					 group="${current.env}-erp-ldp-soa" version="1.0.0"
+					 timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false" lazy="true" retries="0" check="false"/>
+	<!--移动端 登录接口 -->
+    <dubbo:service interface="com.xyscm.ldp.api.UserPwdService"
+		ref="userInfoFacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="0" />
+    <!--移动端 库存校验登录接口 -->               
+    <dubbo:service interface="com.xyscm.ldp.api.StockCheckService"
+		ref="stockCheckFacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="0" />
+    <!--移动端 入库接口 -->                
+    <dubbo:service interface="com.xyscm.ldp.api.LdpMobWarehouseInService"
+		ref="ldpMobWarehouseInFacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="0" />  
+    
+
+
+
+<!--移动端 基础数据接口 提供者 henry-->
+	<dubbo:service interface="com.xyscm.ldp.api.BaseDataService"
+		ref="baseDataServicefacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="0" />
+
+<!--移动端 出库接口 提供者 henry-->
+	<dubbo:service interface="com.xyscm.ldp.api.LdpDeliveryForAppService"
+		ref="ldpDeliveryForAppServiceFacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="0" />
+
+
+
+<!--发货登记接口  提供   henry-->
+	<dubbo:service interface="com.xyscm.ldp.api.LdpOconsignService"
+		ref="ldpOconsignServicefacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"  retries="0" />
+
+<!--调用erp 实提出库接口 henry-->
+	<dubbo:reference interface="com.xyscm.erp.ldp.api.ErpDeliveryOutApi" id="erpDeliveryOutApi"
+					 group="${current.env}-erp-ldp-soa" version="1.0.0"
+					 timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false" lazy="true" retries="0" check="false"/>
+
+
+	<!-- 加工任务同步服务 -->
+	<dubbo:service interface="com.xyscm.ldp.api.LdpMTaskSevice"
+		ref="ldpMTaskSeviceFacade" group="${current.env}-ldp-soa" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"/>
+    
+    <!--调用erp 加工验收接口 -->
+	<dubbo:reference interface="com.xyscm.erp.ldp.api.MTaskAccepService" id="mTaskAccepService"
+					 group="${current.env}-erp-ldp-soa" version="1.0.0"
+					 timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false" lazy="true" retries="0" check="false"/>
+
+	<!-- 库存调整、库存损益 开始-->
+	<dubbo:service interface="com.xyscm.ldp.api.LdpAdjustService"
+		ref="ldpAdjustServiceFacade" group="${current.env}-ldp-Adjust" version="1.0.0"
+                     timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false"/>
+    	
+    	<dubbo:reference interface="com.xyscm.erp.ldp.api.ErpRevisionService" id="erpRevisionService"
+		group="${current.env}-ldp-Adjust" version="1.0.0"
+		timeout="60000" protocol="dubbo" registry="ldpZookeeper" validation="false" lazy="true" retries="0" check="false"/>                 
+	<!-- 库存调整、库存损益 结束-->
+	
+	
+	
+	
+</beans>

@@ -1,0 +1,145 @@
+package com.xyscm.ldp.api.dto;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class StorageEnterDto implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	/**起始时间*/
+	private Date enterDateStart;
+	/**结束时间 */
+	private Date enterDateEnd;
+	/**收货单号*/
+	private String receivingBillcode;
+	/** 单据号 */
+	private String enterBillcode;
+	/**仓库code*/
+	private String warehouseCode;
+	/**仓库name*/
+	private String warehouseName;
+	/**货主code*/
+	private String companyCode;
+	/**货主name*/
+	private String companyName;
+	
+	
+	/**产地*/
+	private String productareaName;
+	/**品名*/
+	private String partsnameName;
+	/**材质*/
+	private String goodsMaterial;
+	/**规格*/
+	private String goodsSpec;
+	
+	/**数量*/
+	private Double goodsNum;
+	
+	/**重量 暂不区分理计磅计*/
+	private Double goodsWeight;
+	/**库区*/
+	private String goodsCodestr10;
+	/**库位*/
+	private String goodsCodestr1;
+	
+	
+	public Date getEnterDateStart() {
+		return enterDateStart;
+	}
+	public void setEnterDateStart(Date enterDateStart) {
+		this.enterDateStart = enterDateStart;
+	}
+	public Date getEnterDateEnd() {
+		return enterDateEnd;
+	}
+	public void setEnterDateEnd(Date enterDateEnd) {
+		this.enterDateEnd = enterDateEnd;
+	}
+	public String getEnterBillcode() {
+		return enterBillcode;
+	}
+	public void setEnterBillcode(String enterBillcode) {
+		this.enterBillcode = enterBillcode;
+	}
+	public String getReceivingBillcode() {
+		return receivingBillcode;
+	}
+	public void setReceivingBillcode(String receivingBillcode) {
+		this.receivingBillcode = receivingBillcode;
+	}
+	public String getWarehouseCode() {
+		return warehouseCode;
+	}
+	public void setWarehouseCode(String warehouseCode) {
+		this.warehouseCode = warehouseCode;
+	}
+	public String getWarehouseName() {
+		return warehouseName;
+	}
+	public void setWarehouseName(String warehouseName) {
+		this.warehouseName = warehouseName;
+	}
+	public String getCompanyCode() {
+		return companyCode;
+	}
+	public void setCompanyCode(String companyCode) {
+		this.companyCode = companyCode;
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	public String getProductareaName() {
+		return productareaName;
+	}
+	public void setProductareaName(String productareaName) {
+		this.productareaName = productareaName;
+	}
+	public String getPartsnameName() {
+		return partsnameName;
+	}
+	public void setPartsnameName(String partsnameName) {
+		this.partsnameName = partsnameName;
+	}
+	public String getGoodsMaterial() {
+		return goodsMaterial;
+	}
+	public void setGoodsMaterial(String goodsMaterial) {
+		this.goodsMaterial = goodsMaterial;
+	}
+	public String getGoodsSpec() {
+		return goodsSpec;
+	}
+	public void setGoodsSpec(String goodsSpec) {
+		this.goodsSpec = goodsSpec;
+	}
+	public Double getGoodsNum() {
+		return goodsNum;
+	}
+	public void setGoodsNum(Double goodsNum) {
+		this.goodsNum = goodsNum;
+	}
+	public Double getGoodsWeight() {
+		return goodsWeight;
+	}
+	public void setGoodsWeight(Double goodsWeight) {
+		this.goodsWeight = goodsWeight;
+	}
+	public String getGoodsCodestr10() {
+		return goodsCodestr10;
+	}
+	public void setGoodsCodestr10(String goodsCodestr10) {
+		this.goodsCodestr10 = goodsCodestr10;
+	}
+	public String getGoodsCodestr1() {
+		return goodsCodestr1;
+	}
+	public void setGoodsCodestr1(String goodsCodestr1) {
+		this.goodsCodestr1 = goodsCodestr1;
+	}
+	
+	
+}

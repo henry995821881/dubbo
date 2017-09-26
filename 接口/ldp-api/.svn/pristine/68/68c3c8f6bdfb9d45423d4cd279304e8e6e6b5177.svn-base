@@ -1,0 +1,43 @@
+package com.xyscm.ldp.api.dto;
+
+import java.io.Serializable;
+
+public class StorageEnterCodeDto implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+	/**数量*/
+	private Double goodsNum;
+	/**重量 暂不区分理计磅计*/
+	private Double goodsWeight;
+	/**库区*/
+	private String goodsCodestr10;
+	/**库位*/
+	private String goodsCodestr1;
+	
+	public Double getGoodsNum() {
+		return goodsNum;
+	}
+	public void setGoodsNum(Double goodsNum) {
+		this.goodsNum = goodsNum;
+	}
+	public Double getGoodsWeight() {
+		return goodsWeight;
+	}
+	public void setGoodsWeight(Double goodsWeight) {
+		this.goodsWeight = goodsWeight;
+	}
+	public String getGoodsCodestr10() {
+		return goodsCodestr10;
+	}
+	public void setGoodsCodestr10(String goodsCodestr10) {
+		this.goodsCodestr10 = goodsCodestr10;
+	}
+	public String getGoodsCodestr1() {
+		return goodsCodestr1;
+	}
+	public void setGoodsCodestr1(String goodsCodestr1) {
+		this.goodsCodestr1 = goodsCodestr1;
+	}
+	
+}

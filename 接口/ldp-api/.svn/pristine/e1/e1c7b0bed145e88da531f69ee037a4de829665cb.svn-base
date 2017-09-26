@@ -1,0 +1,16 @@
+package com.xyscm.ldp.api;
+
+import com.xyscm.framework.common.api.ResultDTO;
+import com.xyscm.ldp.api.dto.GoodsCheckDto;
+import com.xyscm.ldp.api.dto.StorageGoodsDto;
+
+public interface StockCheckService {
+	
+	/**查询物资对应的库存数*/
+	public ResultDTO getGoodsNum(StorageGoodsDto storageSumGoodsDto);
+	
+	/**盘点超过三次数量不对的记录上传接口*/
+	public ResultDTO uploadGoodsCheck(GoodsCheckDto goodsCheckDto);
+	
+	
+}

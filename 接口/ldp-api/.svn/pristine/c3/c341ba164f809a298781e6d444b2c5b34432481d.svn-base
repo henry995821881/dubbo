@@ -1,0 +1,149 @@
+package com.xyscm.ldp.api.dto;
+
+import java.io.Serializable;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+public class GoodsCheckDto implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+	/**仓库代码（查询条件）*/
+	private String warehouseCode;
+	/**货主代码（查询条件）*/
+	private String companyCode;
+	
+	/**品名大类（查询条件）*/
+	private String pntreeName;
+	/**品名（查询条件）*/
+	private String partsnameName;
+	/**产地（查询条件）*/
+	private String productareaName;
+	/**材质（查询条件）*/
+	private String goodsMaterial;
+	/**规格（查询条件）*/
+	private String goodsSpec;
+	/**计量方式（磅计、理记）*/
+	private String goodsMetering;
+	/**库存数量*/
+	private Double goodsNum;
+	
+	/**盘点数量*/
+	private Double checkNum;
+	/**盘点次数*/
+	private Double checkCount;
+	
+	/**操作员code*/
+	private String operatorCode;
+	/**员工code*/
+	private String employeeCode;
+	/**员工姓名*/
+	private String employeeName;
+	/**仓库名*/
+	private String warehouseName;
+	/**货主名*/
+	private String companyName;
+	
+	
+	public String getWarehouseCode() {
+		return warehouseCode;
+	}
+	public void setWarehouseCode(String warehouseCode) {
+		this.warehouseCode = warehouseCode;
+	}
+	public String getCompanyCode() {
+		return companyCode;
+	}
+	public void setCompanyCode(String companyCode) {
+		this.companyCode = companyCode;
+	}
+	public String getPntreeName() {
+		return pntreeName;
+	}
+	public void setPntreeName(String pntreeName) {
+		this.pntreeName = pntreeName;
+	}
+	public String getPartsnameName() {
+		return partsnameName;
+	}
+	public void setPartsnameName(String partsnameName) {
+		this.partsnameName = partsnameName;
+	}
+	public String getProductareaName() {
+		return productareaName;
+	}
+	public void setProductareaName(String productareaName) {
+		this.productareaName = productareaName;
+	}
+	public String getGoodsMaterial() {
+		return goodsMaterial;
+	}
+	public void setGoodsMaterial(String goodsMaterial) {
+		this.goodsMaterial = goodsMaterial;
+	}
+	public String getGoodsSpec() {
+		return goodsSpec;
+	}
+	public void setGoodsSpec(String goodsSpec) {
+		this.goodsSpec = goodsSpec;
+	}
+	public String getGoodsMetering() {
+		return goodsMetering;
+	}
+	public void setGoodsMetering(String goodsMetering) {
+		this.goodsMetering = goodsMetering;
+	}
+	public Double getGoodsNum() {
+		return goodsNum;
+	}
+	public void setGoodsNum(Double goodsNum) {
+		this.goodsNum = goodsNum;
+	}
+	public Double getCheckNum() {
+		return checkNum;
+	}
+	public void setCheckNum(Double checkNum) {
+		this.checkNum = checkNum;
+	}
+	public Double getCheckCount() {
+		return checkCount;
+	}
+	public void setCheckCount(Double checkCount) {
+		this.checkCount = checkCount;
+	}
+	public String getOperatorCode() {
+		return operatorCode;
+	}
+	public void setOperatorCode(String operatorCode) {
+		this.operatorCode = operatorCode;
+	}
+	public String getEmployeeCode() {
+		return employeeCode;
+	}
+	public void setEmployeeCode(String employeeCode) {
+		this.employeeCode = employeeCode;
+	}
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+	public String getWarehouseName() {
+		return warehouseName;
+	}
+	public void setWarehouseName(String warehouseName) {
+		this.warehouseName = warehouseName;
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	
+	public String toString() {
+		return ReflectionToStringBuilder.toString(this);
+	}
+	
+}

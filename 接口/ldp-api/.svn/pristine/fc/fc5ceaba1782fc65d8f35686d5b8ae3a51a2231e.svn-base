@@ -1,0 +1,67 @@
+package com.xyscm.ldp.api.Adjust.dto;
+
+
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+
+import com.xyscm.ldp.api.dto.StorageFeeDto;
+
+public class AdjustDto implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/** 1,物资调整* 2,物资损溢*/
+	private int erpSendFlag;
+	/** 单据类型代码 */
+	private String billtypeCode;
+	/** 库内管理（库存调整、库位调整、库存翻包、库存损溢）主 */
+	private StorageAdjustDto mainMod;
+	/** 库内管理（库存调整、库位调整、库存翻包、库存损溢）明细List */
+	private List<StorageAdjustDetailDto> detailList;
+	/** 费用list */
+	private List<StorageFeeDto> feeList; 
+	/**  临时批号对应的明细 */
+	private Map<String, StorageAdjustDetailDto> detailMap;
+	
+	public String getBilltypeCode() {
+		return billtypeCode;
+	}
+	public void setBilltypeCode(String billtypeCode) {
+		this.billtypeCode = billtypeCode;
+	}
+	public StorageAdjustDto getMainMod() {
+		return mainMod;
+	}
+	public void setMainMod(StorageAdjustDto mainMod) {
+		this.mainMod = mainMod;
+	}
+	public List<StorageAdjustDetailDto> getDetailList() {
+		return detailList;
+	}
+	public void setDetailList(List<StorageAdjustDetailDto> detailList) {
+		this.detailList = detailList;
+	}
+	public List<StorageFeeDto> getFeeList() {
+		return feeList;
+	}
+	public void setFeeList(List<StorageFeeDto> feeList) {
+		this.feeList = feeList;
+	}
+	public Map<String, StorageAdjustDetailDto> getDetailMap() {
+		return detailMap;
+	}
+	public void setDetailMap(Map<String, StorageAdjustDetailDto> detailMap) {
+		this.detailMap = detailMap;
+	}
+	public int getErpSendFlag() {
+		return erpSendFlag;
+	}
+	public void setErpSendFlag(int erpSendFlag) {
+		this.erpSendFlag = erpSendFlag;
+	}
+	
+	
+}
